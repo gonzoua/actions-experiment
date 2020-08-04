@@ -1,0 +1,14 @@
+name: CI build
+
+on:
+  push:
+    branches:
+      - freebsd
+
+jobs:
+  build:
+    runs-on: [self-hosted]
+
+    - name: shell command
+      run: |
+          uname -a
